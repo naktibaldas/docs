@@ -2,8 +2,7 @@
 
 ## Table of Contents
 
-* **[Distributed automated builds](distributed_builds/distributed_builds.md)**
-* **[Gitlab and Redmine integration](redmine_integration/redmine_integration.md)**
+* **[Documents to help development process]**
 
 ## Information:
 
