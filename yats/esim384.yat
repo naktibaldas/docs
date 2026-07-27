@@ -1,0 +1,1361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SettingsName>YAT Terminal Settings</SettingsName>
+  <SettingsVersion>1.8.1</SettingsVersion>
+  <ProductVersion>2.4.1</ProductVersion>
+  <Warning>Modifying structure and/or content may cause undefined behavior!</Warning>
+  <Mark>
+    <TimeStamp>2024-01-23T21:51:32.8124429+02:00</TimeStamp>
+    <UserName>j.lienys</UserName>
+  </Mark>
+  <AutoSaved>false</AutoSaved>
+  <Explicit>
+    <LogIsOn>true</LogIsOn>
+    <UserName />
+    <Terminal>
+      <TerminalType>Text</TerminalType>
+      <IO>
+        <IOType>SerialPort</IOType>
+        <SerialPort>
+          <PortId>
+            <Name>COM14</Name>
+          </PortId>
+          <Communication>
+            <BaudRate>9600</BaudRate>
+            <DataBits>Eight</DataBits>
+            <Parity>None</Parity>
+            <StopBits>One</StopBits>
+            <FlowControl>None</FlowControl>
+            <RtsPin>Disabled</RtsPin>
+            <DtrPin>Disabled</DtrPin>
+          </Communication>
+          <SignalXOnWhenOpened>true</SignalXOnWhenOpened>
+          <AliveMonitor>
+            <Enabled>true</Enabled>
+            <Interval>500</Interval>
+          </AliveMonitor>
+          <AutoReopen>
+            <Enabled>true</Enabled>
+            <Interval>2000</Interval>
+          </AutoReopen>
+          <OutputBufferSize>
+            <Enabled>false</Enabled>
+            <Size>2048</Size>
+          </OutputBufferSize>
+          <BufferMaxBaudRate>true</BufferMaxBaudRate>
+          <MaxChunkSize>
+            <Enabled>true</Enabled>
+            <Size>48</Size>
+          </MaxChunkSize>
+          <MaxSendRate>
+            <Enabled>false</Enabled>
+            <Size>48</Size>
+            <Interval>10</Interval>
+          </MaxSendRate>
+          <IgnoreFramingErrors>false</IgnoreFramingErrors>
+          <EnableRetainingWarnings>true</EnableRetainingWarnings>
+          <NoSendOnOutputBreak>true</NoSendOnOutputBreak>
+          <NoSendOnInputBreak>false</NoSendOnInputBreak>
+        </SerialPort>
+        <Socket>
+          <Type>TcpAutoSocket</Type>
+          <RemoteHost>[localhost]</RemoteHost>
+          <RemoteTcpPort>10000</RemoteTcpPort>
+          <RemoteUdpPort>10000</RemoteUdpPort>
+          <LocalInterface>
+            <Description>[any]</Description>
+            <Address>0.0.0.0</Address>
+          </LocalInterface>
+          <LocalFilter>[any]</LocalFilter>
+          <LocalTcpPort>10000</LocalTcpPort>
+          <LocalUdpPort>10000</LocalUdpPort>
+          <TcpClientAutoReconnect>
+            <Enabled>true</Enabled>
+            <Interval>500</Interval>
+          </TcpClientAutoReconnect>
+          <UdpServerSendMode>MostRecent</UdpServerSendMode>
+        </Socket>
+        <UsbSerialHidDevice>
+          <DeviceInfo>
+            <VendorId>0</VendorId>
+            <ProductId>0</ProductId>
+            <SerialNumber />
+            <UsagePage>-1</UsagePage>
+            <UsageId>-1</UsageId>
+          </DeviceInfo>
+          <MatchSerial>true</MatchSerial>
+          <Preset>None</Preset>
+          <ReportFormat>
+            <UseId>true</UseId>
+            <Id>0</Id>
+            <PrependPayloadByteLength>false</PrependPayloadByteLength>
+            <AppendTerminatingZero>false</AppendTerminatingZero>
+            <FillLastReport>true</FillLastReport>
+          </ReportFormat>
+          <RxFilterUsage>
+            <SeparateRxId>false</SeparateRxId>
+            <AnyRxId>false</AnyRxId>
+            <RxId>0</RxId>
+          </RxFilterUsage>
+          <FlowControl>None</FlowControl>
+          <SignalXOnWhenOpened>true</SignalXOnWhenOpened>
+          <AutoOpen>true</AutoOpen>
+          <EnableRetainingWarnings>true</EnableRetainingWarnings>
+          <IncludeNonPayloadData>false</IncludeNonPayloadData>
+        </UsbSerialHidDevice>
+        <Endianness>BigEndian</Endianness>
+        <IndicateSerialPortBreakStates>false</IndicateSerialPortBreakStates>
+        <SerialPortOutputBreakIsModifiable>false</SerialPortOutputBreakIsModifiable>
+      </IO>
+      <Status>
+        <ShowConnectTime>false</ShowConnectTime>
+        <ShowCountAndRate>false</ShowCountAndRate>
+        <ShowFlowControlCount>false</ShowFlowControlCount>
+        <ShowBreakCount>false</ShowBreakCount>
+      </Status>
+      <Buffer>
+        <TxBufferSize>65536</TxBufferSize>
+        <RxBufferSize>65536</RxBufferSize>
+      </Buffer>
+      <Display>
+        <SeparateTxRxRadix>true</SeparateTxRxRadix>
+        <TxRadix>String</TxRadix>
+        <RxRadix>String</RxRadix>
+        <ShowRadix>true</ShowRadix>
+        <ShowLineNumbers>true</ShowLineNumbers>
+        <LineNumberSelection>Total</LineNumberSelection>
+        <ShowTimeStamp>true</ShowTimeStamp>
+        <TimeStampFormat>HH:mm:ss.fff</TimeStampFormat>
+        <TimeStampUseUTC>false</TimeStampUseUTC>
+        <ShowTimeSpan>false</ShowTimeSpan>
+        <TimeSpanFormat>[d \days ][h][h\:][m]m\:ss\.fff</TimeSpanFormat>
+        <ShowTimeDelta>false</ShowTimeDelta>
+        <TimeDeltaFormat>[d \days ][h][h\:][m][m\:][s]s\.fff</TimeDeltaFormat>
+        <ShowDevice>false</ShowDevice>
+        <ShowDirection>true</ShowDirection>
+        <ShowLength>true</ShowLength>
+        <LengthSelection>CharCount</LengthSelection>
+        <ShowDuration>false</ShowDuration>
+        <TimeDurationFormat>[d \days ][h][h\:][m][m\:][s]s\.fff</TimeDurationFormat>
+        <IncludeIOControl>false</IncludeIOControl>
+        <IncludeIOWarnings>true</IncludeIOWarnings>
+        <DirectionLineBreakEnabled>true</DirectionLineBreakEnabled>
+        <DeviceLineBreakEnabled>true</DeviceLineBreakEnabled>
+        <MaxLineCount>1000</MaxLineCount>
+        <MaxLineLength>1000</MaxLineLength>
+        <ShowCopyOfActiveLine>false</ShowCopyOfActiveLine>
+        <ContentSeparator> </ContentSeparator>
+        <InfoSeparator> </InfoSeparator>
+        <InfoEnclosure>()</InfoEnclosure>
+      </Display>
+      <CharReplace>
+        <ReplaceControlChars>true</ReplaceControlChars>
+        <ControlCharRadix>AsciiMnemonic</ControlCharRadix>
+        <ReplaceBackspace>false</ReplaceBackspace>
+        <ReplaceTab>false</ReplaceTab>
+        <ReplaceSpace>false</ReplaceSpace>
+      </CharReplace>
+      <CharHide>
+        <HideXOnXOff>false</HideXOnXOff>
+        <Hide0x00>false</Hide0x00>
+        <Hide0xFF>false</Hide0xFF>
+      </CharHide>
+      <CharAction>
+        <BeepOnBell>false</BeepOnBell>
+      </CharAction>
+      <Send>
+        <UseExplicitDefaultRadix>false</UseExplicitDefaultRadix>
+        <AllowConcurrency>false</AllowConcurrency>
+        <CopyPredefined>false</CopyPredefined>
+        <Text>
+          <KeepSendText>true</KeepSendText>
+          <SendImmediately>false</SendImmediately>
+          <EnableEscapes>true</EnableEscapes>
+        </Text>
+        <File>
+          <SkipEmptyLines>false</SkipEmptyLines>
+          <EnableEscapes>false</EnableEscapes>
+        </File>
+        <DefaultDelay>100</DefaultDelay>
+        <DefaultLineDelay>100</DefaultLineDelay>
+        <DefaultLineInterval>100</DefaultLineInterval>
+        <DefaultLineRepeat>-1</DefaultLineRepeat>
+        <SignalXOnBeforeEachTransmission>false</SignalXOnBeforeEachTransmission>
+        <SignalXOnPeriodically>
+          <Enabled>false</Enabled>
+          <Interval>1000</Interval>
+        </SignalXOnPeriodically>
+      </Send>
+      <TextTerminal>
+        <Encoding>65001</Encoding>
+        <DecodingMismatchBehavior>ComprehensiveWarning</DecodingMismatchBehavior>
+        <SeparateTxRxEol>false</SeparateTxRxEol>
+        <TxEol>&lt;CR&gt;&lt;LF&gt;</TxEol>
+        <RxEol>&lt;CR&gt;&lt;LF&gt;</RxEol>
+        <ShowEol>true</ShowEol>
+        <SeparateTxRxDisplay>false</SeparateTxRxDisplay>
+        <TxDisplay>
+          <ChunkLineBreakEnabled>false</ChunkLineBreakEnabled>
+          <LengthLineBreak>
+            <Enabled>true</Enabled>
+            <Length>100</Length>
+          </LengthLineBreak>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </TxDisplay>
+        <RxDisplay>
+          <ChunkLineBreakEnabled>false</ChunkLineBreakEnabled>
+          <LengthLineBreak>
+            <Enabled>true</Enabled>
+            <Length>100</Length>
+          </LengthLineBreak>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </RxDisplay>
+        <GlueCharsOfLine>
+          <Enabled>true</Enabled>
+          <Timeout>500</Timeout>
+        </GlueCharsOfLine>
+        <LineSendDelay>
+          <Enabled>false</Enabled>
+          <Delay>500</Delay>
+          <LineInterval>1</LineInterval>
+        </LineSendDelay>
+        <WaitForResponse>
+          <Enabled>false</Enabled>
+          <ResponseLineCount>1</ResponseLineCount>
+          <ClearanceLineCount>1</ClearanceLineCount>
+          <Timeout>500</Timeout>
+        </WaitForResponse>
+        <CharSubstitution>None</CharSubstitution>
+        <TextExclusion>
+          <Enabled>false</Enabled>
+          <Patterns>\s*//(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*$</Patterns>
+          <Patterns>/\*(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*\*/</Patterns>
+          <Patterns>^\s*/\*(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*\*/\s*$</Patterns>
+          <Patterns>\s*#(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*$</Patterns>
+          <Patterns>^\s*(REM|::)(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$)\s*.*$</Patterns>
+          <Patterns>\s*&amp;\s*(REM|::)(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$)\s*.*$</Patterns>
+          <Patterns>%=(?=(?:(?:\\.|[^"\\])*"(?:\\.|[^"\\])*")*(?:\\.|[^"\\])*$).*=%</Patterns>
+        </TextExclusion>
+      </TextTerminal>
+      <BinaryTerminal>
+        <SeparateTxRxDisplay>false</SeparateTxRxDisplay>
+        <TxDisplay>
+          <ChunkLineBreakEnabled>true</ChunkLineBreakEnabled>
+          <LengthLineBreak>
+            <Enabled>false</Enabled>
+            <Length>16</Length>
+          </LengthLineBreak>
+          <SequenceLineBreakBefore>
+            <Enabled>false</Enabled>
+            <Sequence>ABC</Sequence>
+          </SequenceLineBreakBefore>
+          <SequenceLineBreakAfter>
+            <Enabled>false</Enabled>
+            <Sequence>\h(00)</Sequence>
+          </SequenceLineBreakAfter>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </TxDisplay>
+        <RxDisplay>
+          <ChunkLineBreakEnabled>true</ChunkLineBreakEnabled>
+          <LengthLineBreak>
+            <Enabled>false</Enabled>
+            <Length>16</Length>
+          </LengthLineBreak>
+          <SequenceLineBreakBefore>
+            <Enabled>false</Enabled>
+            <Sequence>ABC</Sequence>
+          </SequenceLineBreakBefore>
+          <SequenceLineBreakAfter>
+            <Enabled>false</Enabled>
+            <Sequence>\h(00)</Sequence>
+          </SequenceLineBreakAfter>
+          <TimedLineBreak>
+            <Enabled>false</Enabled>
+            <Timeout>500</Timeout>
+          </TimedLineBreak>
+        </RxDisplay>
+      </BinaryTerminal>
+    </Terminal>
+    <PredefinedCommand>
+      <PageLayout>TwoByTwo</PageLayout>
+      <Pages>
+        <PageName>Page 1</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CHLD=?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+SETVOLTE?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+SETVOLTE=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CEREG?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CEMODE?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIND?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+COPS?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "ATS0?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CLCC\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "ATD+37062880335;\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGATT=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CPAS\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CREG?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AT+CGATT=1\r</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CTEC?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CTEC=4,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CFUN?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+FSLSTFILE="/"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AT+CREG=1\r</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CMGF=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>modem_dbg_on</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>modem_dbg_off</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CPMS="ME","ME","ME"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CPMS="SM","SM","SM"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPMUX?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CLPORT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CLPORT="TCP"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIICR\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPSTATUS\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGACT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGDCONT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+USOCR=17\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGATT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=0,1500\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QISWTMD=0,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+USOCR=?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+IPR=115200\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGDCONT=1,IP,"internet",0,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGACT=1,1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGATT=0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGACT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGATT=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGATT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGPADDR=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGDCONT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGDCONT=?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+USOCR=?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+USOCR=6\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <Pages>
+        <PageName>Page 2</PageName>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIOPEN=1,0,"TCP","78.58.247.8",21,1,1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIGETERROR?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIACT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QISEND=0,10\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QISTATE?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "12345678x0A"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=0,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICFG="recvind"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CGATT?\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICFG="recvind",1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: ""</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=0,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICFG="dataformat"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICFG="dataformat",0,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICFG="viewmode"\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICFG="viewmode",1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=0,96\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIOPEN=1,1,"TCP","88.119.159.217",33665,1,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIOPEN=1,0,"TCP","ss.eldes.lt",8082,1,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICLOSE=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICLOSE=0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=3\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPHEAD=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>modem_dbg_on</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIOPEN=1,1,"TCP","78.58.247.8",21,1,0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICLOSE=0,10\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICLOSE=1,10\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>aa</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>02</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>f0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>9c</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>CA</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>false</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines />
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPHEAD=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPMUX=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIICR\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPSTART=0,"TCP","78.58.247.8",21\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPSTART=1,"TCP","78.58.247.8",21\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+        <Commands>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPSHUT\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Commands>
+      </Pages>
+      <HideUndefinedCommands>false</HideUndefinedCommands>
+    </PredefinedCommand>
+    <AutoAction>
+      <Trigger>[None]</Trigger>
+      <TriggerOptions>
+        <UseText>false</UseText>
+        <CaseSensitive>true</CaseSensitive>
+        <WholeWord>false</WholeWord>
+        <EnableRegex>false</EnableRegex>
+      </TriggerOptions>
+      <Action>[None]</Action>
+    </AutoAction>
+    <AutoResponse>
+      <Trigger>[None]</Trigger>
+      <TriggerOptions>
+        <UseText>false</UseText>
+        <CaseSensitive>true</CaseSensitive>
+        <WholeWord>false</WholeWord>
+        <EnableRegex>false</EnableRegex>
+      </TriggerOptions>
+      <Response>[None]</Response>
+      <ResponseOptions>
+        <EnableReplace>false</EnableReplace>
+      </ResponseOptions>
+    </AutoResponse>
+    <Format>
+      <Font>
+        <Name>DejaVu Sans Mono</Name>
+        <Size>8.25</Size>
+        <Style>Regular</Style>
+      </Font>
+      <FormattingEnabled>true</FormattingEnabled>
+      <TxDataFormat>
+        <Color>Blue</Color>
+        <FontStyle>Bold</FontStyle>
+      </TxDataFormat>
+      <TxControlFormat>
+        <Color>Blue</Color>
+        <FontStyle>Regular</FontStyle>
+      </TxControlFormat>
+      <RxDataFormat>
+        <Color>Purple</Color>
+        <FontStyle>Bold</FontStyle>
+      </RxDataFormat>
+      <RxControlFormat>
+        <Color>Purple</Color>
+        <FontStyle>Regular</FontStyle>
+      </RxControlFormat>
+      <TimeStampFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeStampFormat>
+      <TimeSpanFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeSpanFormat>
+      <TimeDeltaFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeDeltaFormat>
+      <TimeDurationFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </TimeDurationFormat>
+      <DeviceFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </DeviceFormat>
+      <DirectionFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </DirectionFormat>
+      <LengthFormat>
+        <Color>Green</Color>
+        <FontStyle>Regular</FontStyle>
+      </LengthFormat>
+      <IOControlFormat>
+        <Color>Gold</Color>
+        <FontStyle>Bold</FontStyle>
+      </IOControlFormat>
+      <WarningFormat>
+        <Color>Orange</Color>
+        <FontStyle>Bold</FontStyle>
+      </WarningFormat>
+      <ErrorFormat>
+        <Color>OrangeRed</Color>
+        <FontStyle>Bold</FontStyle>
+      </ErrorFormat>
+      <WhiteSpacesFormat>
+        <Color>Black</Color>
+        <FontStyle>Regular</FontStyle>
+      </WhiteSpacesFormat>
+      <BackFormat>
+        <Color>window</Color>
+      </BackFormat>
+    </Format>
+    <Log>
+      <RootPath>C:\Users\j.lienys\Documents\YAT</RootPath>
+      <RootFileName>YAT-Log</RootFileName>
+      <ControlLog>false</ControlLog>
+      <ControlExtension>.log</ControlExtension>
+      <RawLogTx>false</RawLogTx>
+      <RawLogBidir>false</RawLogBidir>
+      <RawLogRx>false</RawLogRx>
+      <RawExtension>.dat</RawExtension>
+      <NeatLogTx>false</NeatLogTx>
+      <NeatLogBidir>true</NeatLogBidir>
+      <NeatLogRx>false</NeatLogRx>
+      <NeatExtension>.log</NeatExtension>
+      <NameType>false</NameType>
+      <NameDirection>false</NameDirection>
+      <NameDate>true</NameDate>
+      <NameTime>true</NameTime>
+      <NameSeparator>-</NameSeparator>
+      <FolderType>false</FolderType>
+      <FolderDirection>false</FolderDirection>
+      <WriteMode>Create</WriteMode>
+      <TextEncoding>UTF8</TextEncoding>
+      <EmitEncodingPreamble>true</EmitEncodingPreamble>
+    </Log>
+    <Find>
+      <AllIsActive>false</AllIsActive>
+    </Find>
+  </Explicit>
+  <Implicit>
+    <TerminalIsStarted>false</TerminalIsStarted>
+    <SendText>
+      <Command>
+        <IsDefined>true</IsDefined>
+        <Description />
+        <DefaultRadix>String</DefaultRadix>
+        <CommandLines>AA 02 F1 9D</CommandLines>
+        <IsFilePath>false</IsFilePath>
+        <FilePath />
+      </Command>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AA 02 F1 9D</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:52:15.8987506+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AA 02 F1 9D EE</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:51:43.8510754+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AA02F19DEE</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:50:52.718+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AA02F19D</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:50:43.767586+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>f0</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:45:41.3556088+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>9c</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:45:40.5233366+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>02</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:44:57.0466524+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>aa</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:44:56.6178661+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>CA</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:44:53.9552189+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>AA02F19D\r</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:28:56.5968102+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICLOSE=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:28:39.5300555+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QICLOSE=0\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:28:39.2013072+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+QIRD=3\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:28:38.8278559+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>at: "AT+CIPHEAD=1\r"</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:28:37.6177743+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>02 01 03 00 00</CommandLines>
+          <IsFilePath>false</IsFilePath>
+          <FilePath />
+        </Item>
+        <TimeStamp>2024-01-18T21:22:41.8422829+02:00</TimeStamp>
+      </RecentCommands>
+      <RecentCommands>
+        <Item>
+          <IsDefined>true</IsDefined>
+          <Description />
+          <DefaultRadix>String</DefaultRadix>
+          <CommandLines>
